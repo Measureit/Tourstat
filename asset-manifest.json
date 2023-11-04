@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/Tourstat/static/css/main.c908884f.css",
+    "main.js": "/Tourstat/static/js/main.28ab9792.js",
+    "static/js/496.710a4ae0.chunk.js": "/Tourstat/static/js/496.710a4ae0.chunk.js",
+    "index.html": "/Tourstat/index.html",
+    "main.c908884f.css.map": "/Tourstat/static/css/main.c908884f.css.map",
+    "main.28ab9792.js.map": "/Tourstat/static/js/main.28ab9792.js.map",
+    "496.710a4ae0.chunk.js.map": "/Tourstat/static/js/496.710a4ae0.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c908884f.css",
+    "static/js/main.28ab9792.js"
+  ]
+}
