@@ -1,4 +1,5 @@
 import AssignmentIcon from '@mui/icons-material/Assignment'
+import SearchIcon from '@mui/icons-material/Search';
 import DashboardIcon from '@mui/icons-material/Dashboard'
 import ShoppingCartIcon from '@mui/icons-material/ShoppingCart'
 import ListItemButton from '@mui/material/ListItemButton'
@@ -11,7 +12,13 @@ import './MenuItems.css'
 
 export const MenuItems = (
   <React.Fragment>
-    <ListItemButton component={Link} to={'/exercise-builder'}>
+    <ListItemButton component={Link} to={'/search'}>
+      <ListItemIcon>
+        <SearchIcon />
+      </ListItemIcon>
+      <ListItemText primary="Search" />
+    </ListItemButton>
+    {/* <ListItemButton component={Link} to={'/exercise-builder'}>
       <ListItemIcon>
         <DashboardIcon />
       </ListItemIcon>
@@ -22,7 +29,7 @@ export const MenuItems = (
         <ShoppingCartIcon />
       </ListItemIcon>
       <ListItemText primary="Trainings" />
-    </ListItemButton>
+    </ListItemButton> */}
   </React.Fragment>
 )
 

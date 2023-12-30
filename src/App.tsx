@@ -21,6 +21,7 @@ import { AppBar } from './shared/components/app-bar/AppBar'
 import { Drawer } from './shared/components/drawer/Drawer'
 import { MenuItems, SecondaryMenuItems } from './shared/components/menu-items/MenuItems'
 import { mdTheme } from './theme'
+import { Search } from './features/search/Search'
 function App() {
   const [open, setOpen] = React.useState(true)
   const toggleDrawer = () => {
@@ -52,7 +53,7 @@ function App() {
 
               <Typography component="h1" variant="h6" color="inherit" noWrap sx={{ flexGrow: 1 }}>
                 <Link color="inherit" underline="none" href="#">
-                  Tourstat
+                  BallGuru
                 </Link>
               </Typography>
 
@@ -80,7 +81,7 @@ function App() {
             <List component="nav">
               {MenuItems}
               <Divider sx={{ my: 1 }} />
-              {SecondaryMenuItems}
+              {/* {SecondaryMenuItems} */}
             </List>
           </Drawer>
           <Box
@@ -96,8 +97,9 @@ function App() {
             <Toolbar />
             <Routes>
               <Route path="/" element={<Home />} />
-              <Route path="/exercise-builder" element={<ExerciseBuilder />} />
-              <Route path="/training-builder" element={<TrainingBuilder />} />
+              <Route path="/search" element={<Search />} />
+              {/* <Route path="/exercise-builder" element={<ExerciseBuilder />} />
+              <Route path="/training-builder" element={<TrainingBuilder />} /> */}
 
               <Route
                 path="*"
